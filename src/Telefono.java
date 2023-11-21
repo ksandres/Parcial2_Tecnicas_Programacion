@@ -1,7 +1,7 @@
 public class Telefono extends Producto {
 
     private String almacenamiento;
-    private String marca;
+    private String descripcion;
     private String procesador;
 
     public Telefono(String nombre, String descripcion, int precio, int cantidad
@@ -9,7 +9,7 @@ public class Telefono extends Producto {
         super(nombre, descripcion, precio, cantidad);
 
         this.almacenamiento = almacenamiento;
-        this.marca = marca;
+        this.descripcion = marca;
         this.procesador= procesador;
     }
 
@@ -22,12 +22,12 @@ public class Telefono extends Producto {
         this.almacenamiento = almacenamiento;
     }
 
-    public String getMarca() {
-        return marca;
+    public String getDescripcion() {
+        return descripcion;
     }
 
-    public void setMarca(String marca) {
-        this.marca = marca;
+    public void setDescripcion(String descripcion) {
+        this.descripcion = descripcion;
     }
 
     public String getProcesador() {

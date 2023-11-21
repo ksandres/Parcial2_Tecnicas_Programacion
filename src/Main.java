@@ -15,6 +15,8 @@ public class Main {
 
         System.out.println("ingrese precio estimado para su " + nombre);
         double precio = x.nextDouble();
+        System.out.println("ingrese la cantidad que desea obtener");
+        int cantidad = x.nextInt();
 
         switch (nombre){
             case "Telefono":
@@ -22,17 +24,17 @@ public class Main {
                 System.out.println("Iphone");
                 System.out.println("Samsung");
                 System.out.println("Huawei");
-                        String marca = x.nextLine();
+                        String descripcion = x.nextLine();
                 System.out.println("ingrese el almacenamiento del dispositivo");
                 System.out.println("520GB");
                 System.out.println("1TB");
                         String almacenamiento = x.nextLine();
-                if (Objects.equals(marca, "Iphone")){
+                if (Objects.equals(descripcion, "Iphone")){
                     System.out.println("ingrese el procesador");
                     System.out.println("A15 Bionic y modelo Iphone 14");
                     System.out.println("A14 Bionic y modelo Iphone 13");
                     String procesador = x.nextLine();
-                } else if (Objects.equals(marca,"Samsung")) {
+                } else if (Objects.equals(descripcion,"Samsung")) {
                     System.out.println("ingrese el procesador");
                     System.out.println("MediaTek Helio G80 y modelo Samsung Galaxy A22");
                     System.out.println("MediaTek Helio G99 y modelo Samsung Galaxy A24");
@@ -43,6 +45,8 @@ public class Main {
                     System.out.println("Kirin 710 Octa Core  y modelo  Huawei P30 Lite");
                     String procesador = x.nextLine();
                 }
+                Producto Telefono = new Telefono( nombre,descripcion, precio,cantidad,almacenamiento,)
+
 
 
 

@@ -18,8 +18,7 @@ public class Producto {
 
     public String getPrecio() {
         NumberFormat pesoCo = NumberFormat.getCurrencyInstance(new Locale("es","CO"));
-        String formatoprecio = pesoCo.format(this.precio);
-        return formatoprecio;
+        return pesoCo.format(this.precio);
     }
 
     public void mostrarInfo(){
